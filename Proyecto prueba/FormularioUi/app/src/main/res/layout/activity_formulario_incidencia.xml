@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormularioIncidencia">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Fecha del evento"
+        android:textSize="24sp" />
+
+    <CalendarView
+        android:id="@+id/fechaEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/radiGroupUbication"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Donde Ocurrio el Evento"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCiudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ciudad" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Campo" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextDireccionCiudad"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Ingrese direccion ciudad"
+        android:inputType="textMultiLine"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTextIndicacionesCampo"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Ingrese indicaciones para llegar al lugar"
+        android:inputType="textMultiLine"
+        android:visibility="gone" />
+</LinearLayout>

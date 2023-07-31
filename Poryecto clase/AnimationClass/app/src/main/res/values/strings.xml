@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AnimationClass</string>
+    <string name="titulo_inicio">Hola Atenea</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintPassword">Password</string>
+    <string name="botonIngresar">Ingresar</string>
+    <string name="titulo_home">Bienvenido!</string>
+    <string name="boton_registro_con">Registro Consumo de Agua</string>
+    <string name="boton_consejos">Consejos</string>
+    <string name="boton_seguimiento">Seguimiento de Progreso</string>}
+    <string name="boton_informacion">Informacion</string>
+    <string name="boton_config">Configuración</string>
+</resources>

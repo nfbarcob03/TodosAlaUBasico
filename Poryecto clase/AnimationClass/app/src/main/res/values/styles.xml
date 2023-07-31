@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name = "SplashTheme" parent ="Theme.AppCompat.NoActionBar">
+        <item name = "android:windowBackground">
+            @drawable/icono
+        </item>
+    </style>
+
+    <style name = "textInputStyle" parent ="Theme.AppCompat.NoActionBar">
+        <item name = "android:textColorHint">@color/hintText</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="android:textColor">@color/inputText</item>
+        <item name="android:backgroundTint">#8C2727</item>
+        <item name="android:radius">0dp</item>
+    </style>
+
+    <style name ="buttonStyle" parent ="Theme.AppCompat.NoActionBar">
+        <item name="android:backgroundTint">#819A16</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="android:textColor">#252121</item>
+    </style>
+
+    <style name ="buttonHomeMenuStyle" parent ="Theme.AppCompat.NoActionBar">
+        <item name="android:backgroundTint">#116E6B</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="android:width">@dimen/buton_width</item>
+        <item name="android:height">@dimen/buton_height</item>
+        <item name="android:textColor">#E4E0DE</item>
+    </style>
+
+    <style name ="titlesStyle" parent ="Theme.AppCompat.NoActionBar">
+        <item name="android:textSize">45sp</item>
+        <item name="android:fontFamily">@font/font_native</item>
+        <item name="android:textColor">@color/titleText</item>
+    </style>
+
+</resources>

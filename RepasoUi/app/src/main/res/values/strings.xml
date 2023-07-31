@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RepasoUi</string>
+    <string name="hola_mundo">Hola mundo!</string>
+    <string name="text_size">30dp</string>
+</resources>
