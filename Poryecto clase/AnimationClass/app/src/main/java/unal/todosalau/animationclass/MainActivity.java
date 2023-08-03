@@ -16,6 +16,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     Button buttonIngresar;
+    Button buttonRegistro;
     EditText editTextCorreo,editTextPassword;
     TextView textViewTitulo;
 
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(),
                 R.anim.fade_out);
         tituloView.startAnimation(animation);
-
+        buttonRegistro = findViewById(R.id.buttonRegistro);
         buttonIngresar =  findViewById(R.id.buttonIngresar);
         editTextCorreo =  findViewById(R.id.editTextCorreo);
         editTextPassword = findViewById(R.id.editTextPassword);
@@ -60,6 +61,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent =  new Intent(MainActivity.this, Home.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slid_from_right, R.anim.slide_to_left);
+            }
+        });
+
+        buttonRegistro.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                Intent intent =  new Intent(MainActivity.this, Registro.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slid_from_right, R.anim.slide_to_left);
             }

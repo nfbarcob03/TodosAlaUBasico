@@ -27,7 +27,7 @@ public class FormularioIncidencia extends AppCompatActivity {
                 String opcionSeleccionada = radioButton.getText().toString();
                 Toast.makeText(FormularioIncidencia.this,
                         "Seleccionaste " + opcionSeleccionada
-                        +"Ingresa el resto de informacion solicitada", Toast.LENGTH_SHORT).show();
+                        +" Ingresa el resto de informacion solicitada", Toast.LENGTH_SHORT).show();
 
                 if(radioButton.getId() == R.id.radioButtonCiudad){
                     editTextDireccionCiudad.setVisibility(View.VISIBLE);

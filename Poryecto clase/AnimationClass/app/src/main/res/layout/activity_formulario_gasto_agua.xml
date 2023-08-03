@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioGastoAgua">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:scaleType="fitXY"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/green_grunge_paper_background" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/titlesStyle"
+        android:layout_width="332dp"
+        android:layout_height="133dp"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:text="Registro Gasto de Agua"
+        android:textAlignment="center"
+        android:textColor="#4E3A23"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <EditText
+        android:id="@+id/ediTextMinutosCorriendoAgua"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:hint="Total minutos agua corriendo"
+        android:inputType="number"
+        android:textColorHint="#272222"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupConoceFlujo"
+        android:layout_width="308dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/ediTextMinutosCorriendoAgua">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:text="Conoces el flujo de la llave que abriste?"
+            android:textAlignment="center"
+            android:textColor="#272222" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSiConoce"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Si lo conozco" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNoConoce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No lo conozco" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/ediTextFlujoLitrosSegundo"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:hint="Ingresa el flujo en Litros/segundo"
+        android:inputType="number"
+        android:textColorHint="#272222"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupConoceFlujo"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <Button
+        android:id="@+id/buttonCalcularConsumo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/buttonStyle"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:text="Calcular"
+        android:textAlignment="center"
+        android:textColor="#503F3F"
+
+
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupConoceFlujo"
+        app:layout_constraintVertical_bias="0.599" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
