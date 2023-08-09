@@ -9,19 +9,30 @@ import android.widget.Button;
 
 public class Home extends AppCompatActivity {
 
-    Button buttonRegistroConsumo;
+    Button buttonRegistroConsumo, buttonConsejos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
         buttonRegistroConsumo = findViewById(R.id.buttonRegistroConsumo);
+        buttonConsejos = findViewById(R.id.buttonConsejos);
 
         buttonRegistroConsumo.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 Intent intent =  new Intent(Home.this,FormularioGastoAgua.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slid_from_right, R.anim.slide_to_left);
+            }
+        });
+
+        buttonConsejos.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent =  new Intent(Home.this,Consejos.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slid_from_right, R.anim.slide_to_left);
             }
